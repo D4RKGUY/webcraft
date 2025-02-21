@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> How to Build A Basic HTML Page? </title>
+        <link rel="stylesheet" type="text/css" href="index.1.css" >
+        <style>
+            h5 {
+            font-size: 20px;
+            color: rgb(255,165,0);
+            }
+        </style>
+    </head>
+    <body>
+        <h1> What is HTML? </h1>
+        <p> HTML (HyperText Markup Language) is the standard language used to create web pages <br> and web applications.
+            It provides the basic structure of a webpage, which can then be <br> enhanced and modified using CSS (Cascading Style Sheets) and JavaScript.
+            HTML <br> consists of a series of elements or tags that define different parts of the content, such as <br> headings, paragraphs, links, images, and more.
+            Each element is enclosed in angle brackets <br> (e.g., &lt;tagname&gt; content &lt;/tagname&gt;).
+            The purpose of HTML is to ensure that web content <br> is structured in a meaningful and accessible way for both users and web browsers.
+        </p>
+        <h2> Basic Structure of HTML </h2> 
+        <img src="img999.jpg" alt="Diagram showing the basic structure of an HTML webpage" height="300px;" width="370px;" > <br>
+        <p> This is the Basic structure of an HTML webpage:
+            <pre>   
+                &lt;!DOCTYPE html&gt; 
+                &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt; Title goes here! &lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt; This is heading 1. We can add up to 6 headings in HTML! &lt;/h1&gt;
+                        &lt;p&gt; Here goes Paragraph! Use "&lt;br&gt;" tag to add new lines in paragraphs! &lt;/p&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre> 
+        </p> 
+        <h2> What is CSS? </h2>
+        <p> Cascading Style Sheets (CSS) is a styling language used to describe the presentation of a <br>
+         web page, defining how HTML elements should be displayed. It enables developers to apply styles <br>
+         such as colors, fonts, spacing, and layout to web content, providing a consistent and visually appealing <br>
+         design across multiple pages. CSS allows for separation of content from design, making it easier to maintain <br>
+         and update the look of a site. It also supports responsive design techniques, ensuring that web pages adapt to <br>
+         different screen sizes and devices. CSS styles can be applied inline, internally within the HTML, or externally <br>
+         through linked stylesheets, offering flexibility in how styles are managed and reused. You can add CSS into an <br>
+         HTML document using any of 3 ways.<br>
+         They are as follows: <br> (1) Inline CSS: This means to add CSS directly into an HTML element using the style attribute. <br>
+         (2)Internal CSS: This means Adding CSS code in the HTML Document using the &ltstyle&gt tag in the &lthead&gt section.<br> (3)External CSS: This means 
+         keeping CSS code in an external file and linked to the HTML <br> document using the &ltlink rel="stylesheet" type="text/css" href="filename.css" &gt tag.
+        </p>
+        <h3> Example of Inline CSS </h3>
+        <h6 style="font-size: 10px; color:red;" > This text is 10 pixels and is in red color! </h6>
+        <p>To get something similar like this, this is the following inline css code used to attain it: 
+            <pre> &lth6 style="font-size: 10px; color:red;" &gt This text is 10 pixels only! &lt/h6&gt </pre>
+            You may also use h1, h2, h3, h4 or h5 instead of h6 here!
+        </p>
+        <h3> Example of Internal CSS </h3>
+        <h5> This text is 20 pixels and is in orange color! </h5>
+        <p>To get something similar like this, this is the following internal css code used to attain it: 
+            <pre> 
+                Head Section:
+                &ltstyle&gt
+                h5 {
+                font-size: 20px;
+                color: rgb(255,165,0);
+                }
+                &lt/style&gt
+                
+                Body Section: 
+                &lth5&gt This text is 20 pixels and is in orange color! &lt/h5&gt
+            </pre>
+            You may also use h1, h2, h3, h4 or h6 instead of h5 here!
+        </p>
+        <h3> Example of External CSS </h3>
+        <h4> This text is in Script font-style, 30 pixel font-size and white font-color! </h4>
+        <p> To get something similar like this, this is the following external css code used to attain it: 
+            <pre>
+                Head Section in HTML file:
+                &ltlink rel="stylesheet" type="text/css" href="filename.css" &gt 
+
+                Body Section in HTML file:
+                &lth4&gt This text is in Script font-style, 30 pixel font-size and white font-color! &lt/h4&gt
+
+                CSS file:
+                @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); 
+                //The above code is used to get the cursive (or script) font from google fonts!
+                h4 {
+                    font-family: 'Dancing Script', cursive;
+                    font-style: italics;
+                    font-size: 30px;
+                    color: White;
+                }
+            </pre>
+        </p>
+        <h2> What is JavaScript? </h2>
+        <p> JavaScript (JS) is a versatile, high-level programming language commonly used in web <br>
+         development to create dynamic and interactive user experiences. It allows developers to <br>
+         manipulate HTML and CSS, handle events, and perform complex computations on the web page. <br>
+         JavaScript operates on the client side (in the browser) as well as on the server side (with Node.js), <br>
+         making it a powerful tool for both front-end and back-end development. Its key features include <br> 
+         event-driven programming, asynchronous operations (using callbacks, promises, and async/await), <br>
+         and a rich set of built-in objects and libraries that facilitate tasks ranging from DOM (Document Object Model)<br>
+         manipulation to data visualization.<br> You can add JS to an HTML document using the following ways: <br>
+         (1) Inline JS: Inline JS means to add JS code directly within the HTML document, typically within specific HTML tags or attributes.<br>
+         (2) Internal JS: Internal JS means placing JS code within the HTML document using the &ltscript&gt tag in the &lthead&gt or &ltbody&gt section. <br>
+         (3) External JS: External JS means placing JS code in an external file with a .js extension and linked to the HTML document using &ltscript&gt tag. <br>
+        </p>
+        <h3> Example for Inline JS </h3>
+        <button onclick="alert('This alert is made through Inline JS!')"> Click me! </button>
+        <p> The following code is used to create this alert box and button: 
+            <pre>
+                &ltbutton onclick="alert('This alert is made through Inline JS!')"&gt; Click me! &lt/button&gt;
+            </pre>
+        </p>
+        <h3> Example for Internal JS </h3>
+        <button onclick="Button()" > Click me to start the example of Internal JS! </button>
+        <script>
+            function Button () {
+            alert ("This alert box is created through Internal JS!");
+            }
+        </script>
+        <p> The following code is used to create this alert (with button and function):
+            <pre> 
+                Button code:
+                &lt;button onclick="Button()" &gt; Click me to start the example of Internal JS! &lt;/button&gt;
+
+                Body section:
+                &lt;script&gt;
+                function Button () {
+                alert ("This alert box is created through Internal JS!");
+                }
+                &lt;/script&gt;
+            </pre>
+        </p>
+        <h3> Example of External JS </h3>
+        <button onclick="Activate()" > Click me to start the example of External JS! </button>
+        <script src="index.2.js" > </script>
+        <p> The following code is used to create this alert (with button and function):
+            <pre>
+                Button code:
+                &lt;button onclick="Activate()" &gt; Click me to start the example of External JS! &lt;/button&gt;
+
+                Linking the JS file:
+                &lt;script src="filename.js" &gt; &lt;/script&gt;
+
+                JS file:
+                function Activate () {
+                alert ("This alert box is created through External JS!");
+                }
+            </pre>
+        </p>
+        <p color= "rgb(204, 255, 21)"> This are some of the basics of HTML, CSS and JS. To learn or study more about HTML, CSS, and JS, click the link below: </p>
+        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"> Click Me! </a>
+        <h1> THANK YOU! </h1>
+    </body>
+</html>
